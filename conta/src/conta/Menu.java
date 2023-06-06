@@ -11,12 +11,9 @@ public class Menu {
 
 	public static void main(String[] args) {
 		
-		Conta c = new Conta(1, 123, 1, "Adriana", 10000.0f);
-		c.visualizar();
-		c.sacar(12000.0f);
-		c.visualizar();
-		c.depositar(5000.0f);
-		c.visualizar();
+		Scanner in = new Scanner(System.in);
+		int option;
+		
 		
 		ContaCorrente cc = new ContaCorrente(2, 123, 1, "Mariana", 10000.0f, 1000.0f);
 		cc.visualizar();
@@ -33,8 +30,7 @@ public class Menu {
 		cp.visualizar();
 		
 		
-		Scanner in = new Scanner(System.in);
-		int option;
+		
 		
 		while(true) {
 			System.out.println(Cores.ANSI_BLACK_BACKGROUND + Cores.TEXT_YELLOW_BOLD + "**************************************************" );
